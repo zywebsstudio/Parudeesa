@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@source "../components";
+@source "../app";
+@source "../lib";
+@source "../data";
+
+@layer base {
+  :root {
+    /* Vibrant, Unmistakable Luxury Plantation Green (Extracted from Logo Leaves) */
+    --brand-green: #1E7B4C;
+    --brand-green-hover: #166534;
+    --brand-green-light: #22C55E;
+    --brand-green-dark: #0D3320;
+    --brand-green-soft: #F0FDF4;
+    --brand-green-subtle: #DCFCE7;
+    
+    --bg-pure-white: #FFFFFF;
+    --bg-soft-gray: #FAFAFA;
+    --footer-black: #080C0A;
+    --text-charcoal: #111827;
+    --text-muted: #4B5563;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #111827;
+    font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-cormorant), Garamond, Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: #1E7B4C;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom Utilities for Parudeesa Brand Green & Pure White System */
+.bg-brand-green { background-color: #1E7B4C; }
+.bg-brand-green-hover { background-color: #166534; }
+.bg-brand-green-dark { background-color: #0D3320; }
+.bg-brand-green-light { background-color: #22C55E; }
+.bg-brand-green-soft { background-color: #F0FDF4; }
+.bg-brand-green-subtle { background-color: #DCFCE7; }
+.bg-footer-black { background-color: #080C0A; }
+
+.text-brand-green { color: #1E7B4C; }
+.text-brand-green-hover { color: #166534; }
+.text-brand-green-light { color: #22C55E; }
+.text-brand-green-dark { color: #0D3320; }
+.text-footer-black { color: #080C0A; }
+.text-charcoal { color: #111827; }
+.text-charcoal-muted { color: #4B5563; }
+
+.border-brand-green { border-color: #1E7B4C; }
+.border-brand-green-light { border-color: #22C55E; }
+.border-brand-green-subtle { border-color: #DCFCE7; }
+
+/* Custom Instagram Brand Gradient */
+.bg-instagram-gradient {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E7B4C;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #166534;
+}
