@@ -18,7 +18,7 @@ export default function Experiences() {
   return (
     <section
       id="experiences"
-      className="relative bg-brand-green-soft/30 py-16 sm:py-20 lg:py-28 overflow-hidden border-b border-brand-green-subtle"
+      className="relative bg-brand-green-soft/30 py-16 lg:pt-28 overflow-hidden"
     >
       <div className="container mx-auto px-3 sm:px-6 lg:px-12 relative z-10">
         {/* Header */}

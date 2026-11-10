@@ -11,10 +11,10 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="relative bg-white py-16 sm:py-20 lg:py-28 overflow-hidden border-b border-brand-green-subtle"
+      className="relative bg-white py-16  lg:pb-28 overflow-hidden border-b border-brand-green-subtle"
     >
       <div className="container mx-auto px-3 sm:px-6 lg:px-12 relative z-10">
-        <div className="space-y-16">
+        <div className="space-y-10 md:space-y-16">
           {/* Header */}
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2.5 mb-3">
@@ -34,7 +34,7 @@ export default function Location() {
           </div>
 
           {/* Location Map & Details Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-10 items-stretch">
             {/* Interactive Map Visual Embed Card */}
             <div className="lg:col-span-7 flex flex-col rounded-2xl overflow-hidden border border-brand-green-subtle shadow-sm bg-black min-h-[380px] sm:min-h-[440px] relative">
               {/* Google Maps iFrame */}

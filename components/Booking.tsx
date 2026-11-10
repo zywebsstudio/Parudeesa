@@ -37,7 +37,7 @@ export default function Booking() {
   return (
     <section
       id="contact"
-      className="relative py-16 sm:py-20 lg:py-28 overflow-hidden bg-white text-charcoal"
+      className="relative pt-16  lg:pt-28 lg:pb-14 overflow-hidden bg-white text-charcoal"
     >
       <div className="container mx-auto px-3 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">

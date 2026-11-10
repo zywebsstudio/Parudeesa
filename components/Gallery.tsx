@@ -51,7 +51,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="relative bg-white py-16 sm:py-20 lg:py-28 overflow-hidden"
+      className="relative bg-white   lg:pt-28 overflow-hidden"
     >
       <style>{`
         .swiper-gallery .swiper-slide {
@@ -125,7 +125,7 @@ export default function Gallery() {
                 href={item.image}
                 data-fancybox="parudeesa-gallery"
                 data-caption={`<strong>${item.title}</strong> &bull; ${item.category}`}
-                className="group relative block aspect-[4/3] sm:aspect-[16/10] w-full rounded-2xl overflow-hidden g transition-all duration-500  select-none"
+                className="group relative block aspect-[4/5] sm:aspect-[16/10] w-full rounded-xl overflow-hidden g transition-all duration-500  select-none"
               >
                 {/* Vibrant Resort Image with Slow Zoom on Hover */}
                 <Image

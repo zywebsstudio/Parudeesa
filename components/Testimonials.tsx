@@ -16,7 +16,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative bg-white py-16 sm:py-20 lg:py-28 overflow-hidden"
+      className="relative bg-white   lg:pt-20 overflow-hidden"
     >
       <div className="container mx-auto px-3 sm:px-6 lg:px-12 relative z-10">
         {/* Section Header with Top-Right Next/Prev Arrows */}
@@ -39,7 +39,7 @@ export default function Testimonials() {
           </div>
 
           {/* Top-Right Next & Previous Controls */}
-          <div className="flex items-center gap-3 shrink-0 self-start sm:self-end">
+          <div className="hidden md:flex items-center gap-3 shrink-0 self-start sm:self-end">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-green-soft text-brand-green hover:bg-brand-green hover:text-white transition-all duration-300 shadow-xs hover:shadow-md cursor-pointer select-none"
@@ -76,7 +76,7 @@ export default function Testimonials() {
               clickable: true,
             }}
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={1.2}
             breakpoints={{
               640: {
                 slidesPerView: 1.2,

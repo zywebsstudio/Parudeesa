@@ -11,7 +11,7 @@ export default function Cottages() {
   return (
     <section
       id="cottages"
-      className="relative bg-brand-green-soft/30 py-16 sm:py-20 lg:py-28 overflow-hidden border-b border-brand-green-subtle"
+      className="relative bg-brand-green-soft/30 pb-16  lg:pt-14 lg:pb-0 overflow-hidden "
     >
       <div className="container mx-auto px-3 sm:px-6 lg:px-12 relative z-10">
         {/* Section Header */}
@@ -43,7 +43,7 @@ export default function Cottages() {
                 className="group relative flex flex-col justify-between rounded-2xl bg-white overflow-hidden border border-brand-green-subtle shadow-sm transition-all duration-300 hover:shadow-xl hover:border-brand-green/60"
               >
                 {/* Cottage Image with Overlay & Badge */}
-                <div className="relative aspect-[16/10] sm:aspect-[16/12] w-full overflow-hidden bg-black">
+                <div className="relative aspect-[16/16] sm:aspect-[16/12] w-full overflow-hidden bg-black">
                   <Image
                     src={cottage.image}
                     alt={`${cottage.name} - Parudeesa Plantation Pool Villa`}

@@ -13,21 +13,32 @@ export default function Hero() {
       className="relative h-[100svh] sm:h-screen w-full overflow-hidden font-sans bg-black"
     >
       {/* Background Autoplaying Luxury Resort Video (Muted & Loop) */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover "
-        >
-          <source src="/video.mp4" type="video/mp4" />
-        
-        </video>
+     <div className="absolute inset-0 z-0">
+  {/* Desktop Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="hidden md:block absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/video.mp4" type="video/mp4" />
+  </video>
 
-        {/* Subtle Dark Gradient Overlay for Contrast & Text Legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/25 to-black/20 z-10" />
-      </div>
+  {/* Mobile Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="block md:hidden absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/vidmob.mp4" type="video/mp4" />
+  </video>
+
+  {/* Dark Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/25 to-black/20 z-10" />
+</div>
 
       {/* Foreground Content Container */}
       <div className="relative z-20 h-full container mx-auto px-3 sm:px-6 lg:px-12 flex flex-col justify-between">

@@ -118,7 +118,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative bg-white py-16 sm:py-20 lg:py-28 overflow-hidden"
+      className="relative bg-white py-16 lg:pt-28 overflow-hidden"
     >
       {/* Subtle organic watermark accent */}
       <div className="absolute right-0 top-1/4 -z-0 translate-x-1/3 opacity-[0.03] pointer-events-none select-none">
@@ -183,7 +183,7 @@ export default function About() {
         </div>
 
         {/* 4 Statistics Metrics Strip (No border, Subtle Shadow & Soft Background, Animated from 0) */}
-        <div ref={statsRef} className="pt-4 sm:pt-6">
+        <div ref={statsRef} className="pt-0 sm:pt-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6">
             {statsData.map((stat, idx) => (
               <StatCard key={idx} item={stat} animate={startCount} />
